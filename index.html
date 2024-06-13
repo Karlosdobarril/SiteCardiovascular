@@ -3,140 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Cardio Vascular</title>
-</head>
-<style>
-
+    <title>Sistema Cardiovascular</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMNsI4n5W4t5N3B4Fq0HFU3tXr0AaA8ZfZ1k5D" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 9px;
-            padding: 9;
-            background-color: black;
-            color: #333;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+            text-align: center; /* Centraliza todo o conteúdo */
         }
-        .card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 50px;
-            margin-bottom: 20px;
+    
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
         }
+    
         .Escola {
-            color: white;
-            
+            color: #32e0c4;
+            font-size: 2em;
+            margin: 0;
         }
-        .anatomia-coracao {
-            font-size: 30px;
+    
+        main {
+            padding: 20px;
+            text-align: left; /* Alinha o texto principal à esquerda */
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin: 0 auto; /* Centraliza o main na página */
         }
-        .explicaSistemaCardio{
-            font-size: 20px;
+    
+        main h1 {
+            font-size: 1.2em;
+            color: #32e0c4;
         }
-        .Oquee{
-            font-size: 20px;
+    
+        main h1.explicaSistemaCardio, main h1.explica {
+            font-size: 1em;
+            color: #eeeeee;
         }
-        .explica{
-            font-size: 22px;
+    
+        main img {
+            width: 100%; /* Reduz o tamanho da imagem para 100% da largura do contêiner */
+            border-radius: 10px;
+            margin: 20px 0;
         }
-        .explicaSistemaCardio{
-            font-size: 22px;
+    
+        main small {
+            color: #bbbbbb;
+            display: block;
+            margin-top: 10px;
         }
-        .TopicosDesteArtigo{
-            font: 14px;
+    
+        main .TopicosDesteArtigo {
+            font-size: 1.2em;
+            color: #32e0c4;
+            margin-top: 20px;
         }
-        .Topicos{
-            font-size: 20px;
+    
+        main .Topicos {
+            font-size: 1em;
+            color: #eeeeee;
+            margin: 10px 0;
         }
-        .composto{
-            font-size: 20px;
+    
+        main .composto, main .coracaohumanos, main .VasosSanguineos, main .explicaVasos, main .seresHumanos {
+            font-size: 1em;
+            color: #eeeeee;
+            margin: 10px 0;
         }
-        .coracaohumanos{
-            font-size: 16px;
+    
+        main li {
+            margin: 10px 0;
+            list-style-type: none;
         }
-        .coracaohumanos{
-            font-size: 22px;
+    
+        main li i {
+            color: #32e0c4;
+            margin-right: 10px;
         }
-        .VasosSanguineos{
-            font-size: 30px;
+    
+        main .anatomia-coracao, main .VasosSanguineos {
+            font-size: 1.5em;
+            color: #32e0c4;
+            margin-top: 20px;
         }
-        .explicaVasos{
-            font-size: 21px;
+    
+        @media (min-width: 758px) {
+            main {
+                text-align: left; /* Ajusta para o alinhamento à esquerda em telas maiores */
+            }
         }
-
-</style>
+    </style>
+    
+</head>
 <body>
     <header>
         <h1 class="Escola">Escola Doutor Otto Feuerschuette</h1>
     </header>
     <main>
         <div class="card">
-            <h1>Sistema Cardiovascular </h1>
-                    <h1 class="explicaSistemaCardio">O sistema cardiovascular, também conhecido como sistema circulatório,
-                    é responsável pelo transporte de sangue, oxigênio, nutrientes e outros
-                    elementos essenciais para as células do corpo, além de remover resíduos
-                    metabólicos.<br><br> É um sistema fechado composto por vários órgãos e estruturas, 
-                    que trabalham juntos para manter a homeostase e a saúde geral do organismo.</h1>                
-            <br>
-                    <img src="img/sistema-cardiovascular.webp" alt="">
-            <br>
-                    <small>O sistema cardiovascular diz respeito ao sistema formado pelo coração e vasos sanguíneos.
-            <br class="Credito">Crédito da Imagem: shutterstock</small>
-            <br>
-            <br>
-                    <h1 class="explica">O <strong>sistema cardiovascular</strong>, também chamado de sistema 
-                    circulatório, é o sistema responsável por garantir o transporte de sangue 
-                    pelo corpo, permitindo, dessa forma, que nossas células recebam, por exemplo
-                    , nutrientes e oxigênio. Esse sistema é formado pelo coração e pelos vasos 
-                    sanguíneos.</h1>
-            <br>
-            <h1 class="TopicosDesteArtigo">Tópicos deste artigo</h1> <br>
-                    <small class="Topicos">1 - Coração<br>
-                    2 - Partes do Coração<br>
-                    3 - Sistema Cardiovascular<br>
-                    4 - Componentes do Sistema Cardiovascular<br>
-                    5 - Funções do Sistema Cardiovascular <br>
-                    </small>
-            
-                    <h1>Componentes de Sistema de Cardiovascular</h1>
-                    <small class="composto">O sistema cardiovascular é composto pelas seguintes estruturas</small>
-            <br>
-            <br>
-                    <li><i class="fas fa-marker"></i><strong>Coração:</strong> órgão responsável por garantir o bombeamento do sangue</li> 
-            <br>
-                    <li><i class="fas fa-marker"></i><strong>Vasos sanguíneos:</strong> são tubos por onde o sangue passa.
-                    Os três principais tipos de vasos sanguíneos são:<strong> artérias, veias e capilares.</strong></li>
-            <br>
-                    <strong class="anatomia-coracao"><small>→ Coração</small></strong>
-            <br><br>
-                    <img class="imagemCoração" src="img/anatomia-coracao.webp" alt="">
-                    <h1 class="coracaohumanos">O coração dos seres humanos, assim como o dos outros mamíferos, é um órgão muscular
-                    formado por quatro câmaras: dois átrios e dois ventrículos. Os átrios são as câmaras 
-                    responsáveis por garantir o recebimento do sangue no coração, enquanto os ventrículos 
-                    são as câmaras responsáveis por garantir o bombeamento do sangue para a fora do coração.</h1>
-            <br>
-            <br>
-                    <h1 class="coracaohumanos">No lado esquerdo do coração, percebe-se a presença apenas de sangue rico em oxigênio,
-                    enquanto do lado direito observa-se a presença apenas de sangue rico em gás carbônico.
-                    No coração, há ainda a presença de quatro válvulas que impedem o refluxo do sangue,
-                    permitindo, desse modo, um fluxo contínuo.</h1>
-            <br>        
-                    <strong class="VasosSanguineos"><small>→ Vasos Sanguineos</small></strong>
-                    <img src="img/vasos-sanguineos.webp" alt="">
-            <br>
-                    <small>"Os vasos sanguíneos são responsáveis por garantir o transporte de sangue pelo corpo."</small>
-            <br><br>     
-                    <h1 class="explicaVasos">Os vasos sanguíneos são um grande sistema de tubos fechados por onde o sangue circula.
-                    Os três principais vasos sanguíneos encontrados no corpo são as artérias, veias e os capilares. Veja, a seguir, a
-                    lgumas características básicas desses três vasos:</h1>
-            <br>
+            <h1>Sistema Cardiovascular</h1>
+            <h1 class="explicaSistemaCardio">O sistema cardiovascular, também conhecido como sistema circulatório, é responsável 
+                pelo transporte de sangue, oxigênio, nutrientes e outros elementos essenciais para as células do corpo, além de 
+                remover resíduos metabólicos. <br><br> É um sistema fechado composto por vários órgãos e estruturas, que trabalham
+                 juntos para manter a homeostase e a saúde geral do organismo.</h1>
+            <img src="img/sistema-cardiovascular.webp" alt="">
+            <small>O sistema cardiovascular diz respeito ao sistema formado pelo coração e vasos sanguíneos.<br>Crédito da Imagem: Shutterstock</small>
+            <h1 class="explica">O <strong>sistema cardiovascular</strong>, também chamado de sistema circulatório, é o sistema responsável
+                 por garantir o transporte de sangue pelo corpo, permitindo, dessa forma, que nossas células recebam, por exemplo, nutrientes
+                  e oxigênio. Esse sistema é formado pelo coração e pelos vasos sanguíneos.</h1>
+
+            <h1 class="TopicosDesteArtigo">Tópicos deste artigo</h1>
+            <small class="Topicos">
+                1 - Coração<br>
+                2 - Partes do Coração<br>
+                3 - Sistema Cardiovascular<br>
+                4 - Componentes do Sistema Cardiovascular<br>
+                5 - Funções do Sistema Cardiovascular<br></small>
+
+            <h1>Componentes de Sistema de Cardiovascular</h1>
+            <small class="composto">O sistema cardiovascular é composto pelas seguintes estruturas</small>
+            <li><i class="fas fa-marker"></i><strong>Coração:</strong> órgão responsável por garantir o bombeamento do sangue</li>
+            <li><i class="fas fa-marker"></i><strong>Vasos sanguíneos:</strong> são tubos por onde o sangue passa. Os três principais tipos de
+            vasos sanguíneos são:
+             <strong>artérias, veias e capilares.</strong></li>
+
+            <strong class="anatomia-coracao">→ Coração</strong>
+
+            <img class="imagemCoração" src="img/anatomia-coracao.webp" alt="">
+
+            <h1 class="coracaohumanos">O coração dos seres humanos, assim como o dos outros mamíferos, é um órgão muscular formado por quatro 
+                câmaras: dois átrios e dois ventrículos. Os átrios são as câmaras responsáveis por garantir o recebimento do sangue no coração,
+                enquanto os ventrículos são as câmaras responsáveis por garantir o bombeamento do sangue para a fora do coração.</h1>
+
+            <h1 class="coracaohumanos">No lado esquerdo do coração, percebe-se a presença apenas de sangue rico em oxigênio, enquanto do lado
+                direito observa-se a presença apenas de sangue rico em gás carbônico. No coração, há ainda a presença de quatro válvulas que 
+                impedem o refluxo do sangue, permitindo, desse modo, um fluxo contínuo.</h1>
+
+            <strong class="VasosSanguineos">→ Vasos Sanguíneos</strong>
+
+            <img src="img/vasos-sanguineos.webp" alt="">
+
+            <small>"Os vasos sanguíneos são responsáveis por garantir o transporte de sangue pelo corpo."</small>
+
+            <small class="explicaVasos">Vasos sanguíneos são um <strong>grande sistema de tubos fechados</strong> por onde o sangue circula. 
+                Os três principais vasos sanguíneos encontrados no corpo são as artérias, veias e os capilares. Veja, a seguir, algumas características
+                básicas desses três vasos:</small>
+
+            <small class="Topicos">
+                1 - <strong>Artérias:</strong> As artérias são vasos que levam o sangue, a partir do coração, para os órgãos e tecidos do corpo. 
+                Nesses vasos, o sangue corre em alta pressão. As artérias ramificam-se em arteríolas.<br><br>
+
+                2 - <strong>Capilares:</strong> São vasos sanguíneos muito delgados que garantem a troca de substâncias entre o sangue e os tecidos do corpo.<br><br>
+
+                3 - <strong>Veias:</strong> Os capilares sanguíneos convergem para as chamadas vênulas, as quais convergem para as veias. As veias são os vasos que garantem que o sangue retorne ao coração. Nesses vasos, o sangue corre em baixa pressão e para evitar o refluxo do
+                sangue as veias são dotadas de valvas.<br></small>
                     
-                    <small class="Topicos">
-                    1 - <strong>Artérias:</strong>As artérias são vasos que levam o sangue, a partir do coração, para os órgãos e tecidos do corpo.
-                    Nesses vasos, o sangue corre em alta pressão. As artérias ramificam-se em arteríolas.<br><br>
-                    2 - <strong>Capilares:</strong>São vasos sanguíneos muito delgados que garantem a troca de substâncias entre o sangue e os tecidos do corpo.<br><br>
-                    3 - <strong>Veias:</strong>Os capilares sanguíneos convergem para as chamadas vênulas, as quais convergem para as veias. As veias são os vasos que garantem que
-                    o sangue retorne ao coração. Nesses vasos, o sangue corre em baixa pressão e para evitar o refluxo do sangue as veias são dotadas de valvas.<br>
-                    </small>
-        </div>
-    </main>
-</body>
-</html>
+                <strong class="seresHumanos">A circulação nos seres humanos</strong>
+                <h1>"A circulação nos seres humanos é denominada de circulação dupla, uma vez que se observa a presença de dois circuitos: a circulação sistêmica 
+                    ou grande circulação e a circulação pulmonar ou pequena circulação:"</h1>
+                <h1>"Circulação sistêmica ou grande circulação: Diz respeito ao circuito que o sangue faz partindo do coração em direção aos vários tecidos do corpo
+                    e depois retornando a esse órgão. Ao chegar do pulmão, o sangue é impulsionado para o corpo. Nos capilares, são feitas as trocas gasosas, e o sangue,
+                    agora rico em gás carbônico e pobre em oxigênio, retorna ao coração."</h1>
+                <h1>"Circulação pulmonar ou pequena circulação: Diz respeito ao circuito realizado pelo sangue do coração aos pulmões e seu retorno ao coração. Nesse circuito,
+                    o sangue sai pobre em oxigênio do coração, segue para o pulmão, onde é oxigenado, e retorna ao coração"</h1>      
+            </div>
+        </main>
+    </body>
+    </html>
+    
